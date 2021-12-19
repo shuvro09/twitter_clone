@@ -1,0 +1,134 @@
+.singup{
+    display: flex;
+    height: 100vh;
+}
+.signup__image{
+flex: 0.6;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.signup__part{
+    flex: 0.4;
+    /* min-width: 500px; */
+}
+.signup__image {
+    max-width: 100%;
+    /* height: 100vh; */
+    background-image: url(https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png);
+}
+.signup_twitterIcon{
+    font-size: 25vw !important;
+    color: white !important;
+}
+.signup__part{
+    padding:30px;
+}
+.signup__part >h1{
+    font-size: 50px;
+    padding-top: 10%;
+}
+.singup__form{
+    width: 70%;
+    padding-top: 10%;
+}
+.singup__form > small{
+    font-size: 12px;
+}
+.singup__form >h3{
+    margin-top: 10%;
+}
+.signup__button{
+    margin-top: 10% !important;
+    border-radius: 25px !important;
+    border: 1px solid var(--twitter-color) !important;
+}
+.signup_part__twitterIcon{
+    font-size: 48px !important;
+    color:var(--twitter-color)
+}
+.signup__button:hover{
+    background-color: var(--twitter-color) !important;
+    color: white;
+}
+@media screen and (max-width:900px) {
+    .singup{
+        flex-direction: column;
+    }
+    .signup__part{
+        min-width: none;
+        order: -1;
+        height: 100vh !important;
+        padding-left: 20%;
+    }
+}
+.modal__container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(112, 110, 110, 0.9);
+    width: 100%;
+    height: 100%;
+}
+
+.modal{
+    position: absolute;
+    z-index: 5;
+    width:550px;
+    height: 90%;
+    top:5%;
+    left: calc((100% - 550px) / 2);
+    background-color: white;
+    border-radius: 5%;
+    opacity: none;
+    
+}
+.modal >h2{
+    padding-left: 10px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+.modal .twitter__icon{
+    position: absolute;
+    font-size: 30px !important;
+    left: calc((100% - 30px) / 2);
+    top: 5px !important;
+    color: var(--twitter-color);
+}
+.modal .signup__button{
+    width: 80%;
+    margin-left: 10%;
+}
+.closeModal{
+    margin-top: 15px;
+    margin-left: 15px;
+    border: none;
+    background-color: white;
+}
+.closeModal:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #000, 0 0 0 8px #d2d4d6;
+    background-color: #d2d4d6;
+    border-radius: 100%;
+}
+.modal__input{
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid var(--twitter-color);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.modal__input > input{
+    width: 90%;
+    padding:15px 5px;
+    border: none;
+}
+@media screen and (max-width:700px) {
+    .modal{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top:0;
+        border-radius: 0;
+    }
+}
