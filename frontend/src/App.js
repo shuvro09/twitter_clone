@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-        <Route exact path='/login' element={<Signup/>}></Route>
+        <Route exact path='/' element={<Signup/>}></Route>
         <Route exact path='/feed'  element={<Home user={user} />}></Route>
     </Routes>
     </BrowserRouter>

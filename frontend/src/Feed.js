@@ -10,7 +10,7 @@ function Feed({curr_user}) {
     useEffect(()=>{
         const q=query(collection(db, "posts"));
         onSnapshot(q, (snapshot) => {
-            setPosts(snapshot.docs.map(doc=>({...doc.data(),key:doc.id})))
+            setPosts(snapshot.docs.map(doc=>({...doc.data(),key:doc.id})).sort((a,b)=>b.timestamp-a.timestamp))
           });
     },[])
     return (

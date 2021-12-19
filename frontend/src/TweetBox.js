@@ -19,7 +19,8 @@ function TweetBox({curr_user}) {
                 image:tweetImage,
                 text:tweetMessage,
                 verified:true,
-                likes:[]
+                likes:[],
+                timestamp:new Date().getTime()
               });
             setTweetMessage("");
             setTweetImage("");
