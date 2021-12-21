@@ -1,5 +1,5 @@
 .widgets{
-    flex:0.35;
+    flex:0.3;
 }
 .widgets__input{
     display: flex;
@@ -19,6 +19,7 @@
 }
 
 .widgets__widgetContainer{
+    max-width: 30vw;
     margin-top: 15px;
     margin-left: 20px;
     padding: 20px;
@@ -29,6 +30,11 @@
 .widgets__widgetContainer >h2{
     font-size: 18px;
     font-weight: 700;
+}
+@media screen and (max-width:1100px) {
+    .widgets{
+        flex:0.4
+    }
 }
 @media screen and (max-width:900px) {
     .widgets{

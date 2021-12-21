@@ -32,4 +32,10 @@
     .sidebarOption > h2{
         display: none;
     }
+    .sidebarOption{
+        width:48px;
+    }
+    .sidebarOption > .MuiSvgIcon-root{
+        flex:1;
+    }
 }
