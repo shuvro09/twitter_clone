@@ -6,11 +6,12 @@ import {   collection, addDoc  } from "firebase/firestore";
 function TweetBox({curr_user}) {
     const [tweetMessage,setTweetMessage] = useState('');
     const [tweetImage,setTweetImage] = useState('');
+    const [tweetDisable,setTweetDisable] = useState(false);
     const sendTweet = async (e)=>{
         e.preventDefault();
-        console.log(curr_user)
+        setTweetDisable(true);
         if(!(tweetImage||tweetMessage))
-        return
+        {setTweetDisable(false);return;}
         try{
             await addDoc(collection(db, "posts"), {
                 avatar:"",
@@ -22,8 +23,10 @@ function TweetBox({curr_user}) {
                 likes:[],
                 timestamp:new Date().getTime()
               });
+            document.getElementById('fileInput').value='';
             setTweetMessage("");
             setTweetImage("");
+            setTweetDisable(false);
         }
         catch(e)
         {console.log(e)}
@@ -51,9 +54,10 @@ function TweetBox({curr_user}) {
                     onChange={e=>setTweetMessage(e.target.value)}
                     value={tweetMessage}
                     placeholder="What's happening" 
-                    type='text'></input>
+                    type='text'
+                    disabled={tweetDisable}></input>
                 </div>
-                <input type='file' name='file' onChange={e=>handleChange(e)} accept="image/png, image/gif, image/jpeg"></input>
+                <input type='file' name='file' onChange={e=>handleChange(e)} accept="image/png, image/gif, image/jpeg" id='fileInput' disabled={tweetDisable}></input>
                 {/* <input className='tweetBox__imageInput'
                 onChange={e=>setTweetImage(e.target.value)}
                 value={tweetImage} 
@@ -62,6 +66,7 @@ function TweetBox({curr_user}) {
                 <Button 
                 onClick={sendTweet}
                 type ='submit'
+                disabled={tweetDisable}
                 className='tweetBox__tweetButton'>Tweet</Button>
             </form>
         </div>

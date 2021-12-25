@@ -35,6 +35,7 @@ function Feed({curr_user}) {
                 image={post.image}
                 avatar={post.avatar}
                 like={post.likes.length}
+                comments={post.comments}
                 isLiked={post.likes.includes(curr_user.uid)}
             />
             ))}

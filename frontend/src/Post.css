@@ -8,12 +8,19 @@
 .post__body{
     flex: 1;
     padding: 10px;
+    
 }
-
+.chatIcon:hover{
+    color: var(--twitter-color);
+}
+.favouriteIcon:hover{
+    color:red
+}
 .post__body > img{
     border-radius: 20px;
     max-width: 100%;
     max-height: 100%;
+    object-fit: cover;
 }
 .post__footer{
     display: flex;
@@ -39,7 +46,7 @@
     color: gray;
 }
 .post__avatar{
-    padding: 20px;
+    padding: 10px;
 }
 .isLiked{
     color: crimson;
@@ -47,8 +54,68 @@
 .MuiSvgIcon-root:hover{
     cursor: pointer;
 }
+.post__delete{
+    float:right;
+
+}
+.post__delete:hover{
+    color:var(--twitter-color)
+}
+.post__comments{
+    display: flex;
+    flex-direction: column;
+    max-height: 180px;
+    /* flex-wrap: wrap; */
+}
+.comment__body{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: fit-content;
+    max-height: 150px;
+    padding-bottom: 5px;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.comment__body::-webkit-scrollbar {
+    display: none;
+  }
+.post__commentFooter{
+    padding-top: 5px;
+    flex:1;
+    display: flex;
+    max-height: 30px;
+}
+.post__commentBox{
+    flex: 1;
+    font-size: 20px;
+    border: none;
+    border: none;
+    overflow: auto;
+    outline: none;
+    max-width: 90% !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none;
+}
+.comment__button{
+    border: 0;
+    background-color: white;
+}
+.comment__button:hover{
+    color: var(--twitter-color);
+}
 @media screen and (max-width:900px) {
     .post{
         max-width: 100%;
+    }
+}
+@media screen and (max-width:400px) {
+    .post__commentBox{
+        font-size:13px
     }
 }

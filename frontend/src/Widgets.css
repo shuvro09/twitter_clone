@@ -1,5 +1,5 @@
 .widgets{
-    flex:0.3;
+    flex:0.30;
 }
 .widgets__input{
     display: flex;
@@ -19,7 +19,6 @@
 }
 
 .widgets__widgetContainer{
-    max-width: 30vw;
     margin-top: 15px;
     margin-left: 20px;
     padding: 20px;
