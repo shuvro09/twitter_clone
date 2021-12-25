@@ -5,7 +5,6 @@ import Widgets from './Widgets';
 import { Navigate  } from 'react-router-dom';
 
 function Home({user}) {
-    console.log(user,"home")
   if(!user || user.uid===null) 
     return <Navigate  to='/'/>
   return (

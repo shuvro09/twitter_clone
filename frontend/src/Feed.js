@@ -6,7 +6,6 @@ import db from './firebase.js'
 import {  onSnapshot, collection, query } from "firebase/firestore";
 function Feed({curr_user}) {
     const [posts,setPosts] = useState([]);
-    console.log(db)
     useEffect(()=>{
         const q=query(collection(db, "posts"));
         onSnapshot(q, (snapshot) => {
