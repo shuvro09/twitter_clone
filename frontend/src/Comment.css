@@ -52,7 +52,8 @@ font-size: 5px !important;
     cursor: pointer;
 }
 .comment__delete{
-    float:right
+    float:right;
+    color:rgb(195, 192, 192);
 }
 .comment__delete:hover{
     color:var(--twitter-color)

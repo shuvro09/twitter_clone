@@ -56,7 +56,7 @@
 }
 .post__delete{
     float:right;
-
+    color:rgb(195, 192, 192)
 }
 .post__delete:hover{
     color:var(--twitter-color)
