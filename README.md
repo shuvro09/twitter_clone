@@ -6,6 +6,7 @@ A simple react UI clone of twitter with the following feature :
 3. Add comment.
 4. Delete comment.
 5. Like posts.
+6. Signin/Signout - Email should of form abc@xyz.com Password should be of 6 length atleast
 
 Link to hosted site : https://twitter-clone-fb54a.web.app/
 
