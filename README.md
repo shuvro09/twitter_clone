@@ -15,8 +15,8 @@ Link to hosted site : https://twitter-clone-fb54a.web.app/
 
 ![image](https://user-images.githubusercontent.com/33157366/147476291-9536a946-880e-452b-a027-473726175fe8.png)
 
-![image](https://user-images.githubusercontent.com/33157366/147475884-54c7ca56-0b5d-45d0-9787-74e0119476bc.png)
+![image](https://user-images.githubusercontent.com/33157366/147477484-fa0c1dc1-9dd7-4033-8b73-305aac0a30bb.png)
 
-![image](https://user-images.githubusercontent.com/33157366/147476336-fe4e737c-4eab-47d5-8473-b16c4a3936c9.png)
+![image](https://user-images.githubusercontent.com/33157366/147477513-ddf5fbf5-d7cb-4694-8b47-656b767f69d1.png)
 
 
