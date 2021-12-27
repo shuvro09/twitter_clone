@@ -9,5 +9,8 @@ A simple react UI clone of twitter with the following feature :
 
 Link to hosted site : https://twitter-clone-fb54a.web.app/
 
+![image](https://user-images.githubusercontent.com/33157366/147476092-f98ed490-64eb-42f5-8556-1f0ab1c38b22.png)
+
+
 ![image](https://user-images.githubusercontent.com/33157366/147475884-54c7ca56-0b5d-45d0-9787-74e0119476bc.png)
 
