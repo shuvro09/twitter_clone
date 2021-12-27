@@ -31,7 +31,7 @@ function Post({
     useEffect(()=>{
         const q=query(collection(db, "posts",id,"comments"));
         onSnapshot(q, (snapshot) => {
-            setComment(snapshot.docs.map(doc=>({...doc.data(),key:doc.id})).sort((a,b)=>b.timestamp-a.timestamp))
+            setComment(snapshot.docs.map(doc=>({...doc.data(),key:doc.id})).sort((a,b)=>a.timestamp-b.timestamp))
           });
     },[id])
     const handleLikes = async ()=>{
